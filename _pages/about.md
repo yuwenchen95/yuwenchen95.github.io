@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a 3rd year DPhil student supervised by [Prof. Paul Goulart](https://users.ox.ac.uk/~engs1373/) in the control group of Department of Engineering Science, University of Oxford, and my research is financially supported by Clarendon Scholarship. Before studying at Oxford, I obtained my bachelor degree from the Department of Electrical Engineering of Shanghai Jiao Tong University (2017) and master degree from the Department of Information Technology and Electrical Engineering of ETH Zurich (2020).
+I'm a 3rd year DPhil (PhD) student affiliated with Lincoln College, University of Oxford. My research is supervised by [Prof. Paul Goulart](https://users.ox.ac.uk/~engs1373/) in the control group of Department of Engineering Science and financially supported by Clarendon Scholarship. Before joining University of Oxford, I obtained my bachelor degree from the Department of Electrical Engineering of Shanghai Jiao Tong University (2017) and master degree from the Department of Information Technology and Electrical Engineering of ETH Zurich (2020).
 
 My current research interests are about numerical algorithms for convex conic optimization, including efficient first-order methods and interior point methods.
 
@@ -23,7 +23,7 @@ Publications
 
 Teachings
 ------
-- <p style="text-align:left;">AIMS: Optimization<span style="float:right;">2022</span></p>     
+- <div style="text-align:left;">AIMS: Optimization<span style="float:right;">2022</span></div>     
 - <p style="text-align:left;">B15 Linear Dynamic Systems and Optimal Control<span style="float:right;">2022</span></p>         
 - <p style="text-align:left;">B15 Lab <span style="float:right;">2021, 2022</span></p>         
 
