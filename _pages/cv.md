@@ -9,7 +9,5 @@ redirect_from:
 
 {% include base_path %}
 
-Please find my full CV here<ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+Please find my full CV [here](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/files/CV_Yuwen_Chen.pdf).
   
