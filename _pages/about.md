@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a 3rd year DPhil student supervised by Prof. Paul Goulart in the control group of Department of Engineering Science, University of Oxford. My work is financially supported by Clarendon Scholarship. Before studying at Oxford, I obtained my bachelor degree from the Department of Electrical Engineering of Shanghai Jiao Tong University (2017) and my master from the Department of Information Technology and Electrical Engineering of ETH Zurich (2020).
+I'm a 3rd year DPhil student supervised by [Prof. Paul Goulart](https://users.ox.ac.uk/~engs1373/) in the control group of Department of Engineering Science, University of Oxford. My work is financially supported by Clarendon Scholarship. Before studying at Oxford, I obtained my bachelor degree from the Department of Electrical Engineering of Shanghai Jiao Tong University (2017) and my master from the Department of Information Technology and Electrical Engineering of ETH Zurich (2020).
 
 My current research interests are about numerical algorithms for convex conic optimization, including efficient first-order methods and interior point methods.
 
