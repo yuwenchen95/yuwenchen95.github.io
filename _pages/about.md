@@ -29,4 +29,4 @@ Teachings
 
 Software
 ------
-- [Clarabel.jl](https://github.com/oxfordcontrol/Clarabel.jl)
+- [Clarabel.jl](https://oxfordcontrol.github.io/ClarabelDocs/stable/)
