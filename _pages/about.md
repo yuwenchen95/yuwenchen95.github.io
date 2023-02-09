@@ -40,7 +40,7 @@ Publications
 
 Teachings
 ------
-- AIMS: Optimization                                      2022
+- <p style="text-align:left;">AIMS: Optimization<span style="float:right;">2022</span></p>         
 - B15 Linear Dynamic Systems and Optimal Control          2022
 - B15 Lab                                             2021, 2022
 
