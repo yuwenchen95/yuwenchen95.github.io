@@ -45,6 +45,12 @@ Many people use a git client to create files on their local computer and then pu
 Example: editing a markdown file for a talk
 ![Editing a markdown file for a talk](/images/editing-talk.png)
 
-For more info
+Publications
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+"Burer-Monteiro ADMM for Large-scale SDPs", Yuwen Chen, Paul Goulart, arXiv 
+"An Early Termination Technique for ADMM in Mixed Integer Conic Programming", Yuwen Chen, Paul Goulart, ECC2022 
+"Burer-Monteiro ADMM for Large-scale Diagonally Constrained SDPs", Yuwen Chen, Paul Goulart, ECC2022
+"An accelerated dfo algorithm for finite-sum convex functions", Yuwen Chen, Antonio Orvieto, Aurelien Lucchi, ICML2020
+"Game theoretic stochastic energy coordination under a distributed zeroth-order algorithm", Yuwen Chen, Suli Zou, John Lygeros, IFAC2020
+
+
