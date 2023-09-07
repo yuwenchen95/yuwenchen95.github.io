@@ -12,9 +12,15 @@ I'm a 3rd year DPhil (PhD) student affiliated with Lincoln College, University o
 
 My current research interests are about numerical algorithms for convex conic optimization, including efficient first-order methods and interior point methods.
 
+Updates
+------
+- Our project **[Clarabel.jl/rs](https://oxfordcontrol.github.io/ClarabelDocs/stable/)** has been awarded EPSRC Impact Acceleration Account fund
 
 Publications
 ------
+- *An Efficient IPM Implementation for A Class of Nonsymmetric Cones*, **Yuwen Chen** and Paul Goulart, *arXiv*
+- *A Unified Early Termination Technique for Primal-dual Algorithms in Mixed Integer Conic Programming*, **Yuwen Chen** and Paul Goulart, Control Systems Letters (L-CSS)
+- *Design Optimization for Bellow Soft Pneumatic Actuators in Shape-Matching*, Yao Yao, **Yuwen Chen**, Liang He, Perla Maiolino, 2023 IEEE International Conference on Soft Robotics
 - *Burer-Monteiro ADMM for Large-scale SDPs*, **Yuwen Chen**, Paul Goulart, *arXiv*
 - *An Early Termination Technique for ADMM in Mixed Integer Conic Programming*, **Yuwen Chen**, Paul Goulart, 20th European Control Conference, ECC 2022 
 - *Burer-Monteiro ADMM for Large-scale Diagonally Constrained SDPs*, **Yuwen Chen**, Paul Goulart, 20th European Control Conference, ECC 2022
@@ -23,9 +29,9 @@ Publications
 
 Teachings
 ------
-- <div style="text-align:left;">AIMS: Optimization<span style="float:right;">2022</span></div>     
+- <div style="text-align:left;">AIMS: Optimization<span style="float:right;">2022, 2023</span></div>     
 - <div style="text-align:left;">B15 Linear Dynamic Systems and Optimal Control<span style="float:right;">2022</span></div>         
-- <div style="text-align:left;">B15 Lab <span style="float:right;">2021, 2022</span></div>         
+- <div style="text-align:left;">B15 Lab <span style="float:right;">2022, 2023</span></div>         
 
 Software
 ------
