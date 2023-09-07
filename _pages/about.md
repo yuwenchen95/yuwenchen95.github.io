@@ -12,9 +12,12 @@ I'm a 3rd year DPhil (PhD) student affiliated with Lincoln College, University o
 
 My current research interests are about numerical algorithms for convex conic optimization, including efficient first-order methods and interior point methods.
 
-Updates
+News
 ------
-- Our project **[Clarabel.jl/rs](https://oxfordcontrol.github.io/ClarabelDocs/stable/)** has been awarded EPSRC Impact Acceleration Account fund
+- I gave a talk of my work on large-scale convex conic optimization to the SOC Lab, UCSD. (July 2023)
+- I gave a talk of our Clarabel solver to the Predictive Control Lab, EPFL. (June 2023)
+- Our project **[Clarabel.jl/rs](https://oxfordcontrol.github.io/ClarabelDocs/stable/)** has received the [EPSRC Impact Acceleration Account fund](https://www.mpls.ox.ac.uk/research-funding/impact-and-innovation/iaa#funding-schemes). (June 2023)
+
 
 Publications
 ------
