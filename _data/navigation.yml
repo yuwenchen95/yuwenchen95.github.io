@@ -12,11 +12,11 @@ main:
 #  - title: "Portfolio"
 #    url: /portfolio/
         
- - title: "Convex optimization blogs"
-   url: /posts/
-    
-  - title: "CV"
-    url: /cv/
+- title: "Convex optimization blogs"
+  url: /posts/
+  
+- title: "CV"
+  url: /cv/
     
 #  - title: "Guide"
 #    url: /markdown/
