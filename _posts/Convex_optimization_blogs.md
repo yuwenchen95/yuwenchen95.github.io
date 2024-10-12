@@ -1,7 +1,7 @@
 ---
-title: 'Blog Post number 4'
-date: 2015-08-14
-permalink: /posts/2012/08/blog-post-4/
+title: 'Convex optimization blogs'
+date: 2024-10-12
+permalink: /posts/2024/10/Convex optimization blogs/
 tags:
   - cool posts
   - category1
