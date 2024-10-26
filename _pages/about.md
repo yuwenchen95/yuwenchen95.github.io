@@ -42,4 +42,4 @@ Software
 Award
 ------
 - <div style="text-align:left;">Clarendon Scholarship<span style="float:right;">2020-2024</span></div>    
-- - <div style="text-align:left;">EPSRC IAA Technology Fund<span style="float:right;">2023</span></div>    
+- <div style="text-align:left;">EPSRC IAA Technology Fund<span style="float:right;">2023</span></div>    

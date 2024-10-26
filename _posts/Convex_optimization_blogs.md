@@ -1,26 +1,16 @@
-<!-- ---
-title: 'Convex optimization blogs'
-date: 2024-10-12
-permalink: /posts/2024/10/Convex optimization blogs/
-tags:
-  - cool posts
-  - category1
-  - category2
---- -->
-
 This is the starting page of my own blogs on convex optimization after 5 years of study of optimization theory since my master program at ETH Zurich. I started my optimization career by mistakes: I initially thought it is a compulsory course for master students back in China and start to learn it during the summer vacation, but then realize it is a really fascinating topic and shift my study into it.
 
 In this blog, I will focus on the introduction to a variety of optimization algorithms.
 
-凸优化
+Convex optimization
 ======
 
-blog 列表
+Blogs
 ------
 
-- 凸优化基础知识
-  1. 什么是凸优化？
-  2. 常见的convex constraint, objective
+- Basics of convex optimization
+  1. [What is convex optimization？common constraints and objectives](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Basics_of_convex_optimization/common_constraints_and_objectives.md).
+  2. DCP
    
 - 凸优化算法
   1. 零阶算法
