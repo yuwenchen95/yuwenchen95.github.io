@@ -140,7 +140,7 @@ There are many types of convex cones but almost all of them can be decomposed in
 ```math
 \begin{align}
 \begin{aligned}
-\mathcal{K}_{\exp} := \left\{ (x, y, z) \ \middle| \ y > 0, y \exp \left( \frac{x}{y} \right) \leq z \right\} \cup \left\{ (x, 0, z) \mid x \leq 0, z \geq 0 \right\}.
+\mathcal{K}_{\exp} := \left\{ (x, y, z) \ \middle| \ y > 0, y \cdot \exp \left( \frac{x}{y} \right) \leq z \right\} \cup \left\{ (x, 0, z) \mid x \leq 0, z \geq 0 \right\}.
 \end{aligned}
 \end{align}
 ```
@@ -169,7 +169,7 @@ Here I will show how to model a second-order cone optimization via [JuMP](https:
  for a standard binary classification task, the resulting classifier is defined as: 
  ```math
  \begin{align}
- h_{w, b}(x)=\text{sgn}(\langle w, x\rangle+b),
+ h_{w, w_0}(x)=\text{sgn}(\langle w, x\rangle+w_0),
  \end{align}
  ```
  where the parameters $w, b$ are the solution of the following convex optimization problem:
@@ -182,7 +182,7 @@ Here I will show how to model a second-order cone optimization via [JuMP](https:
 \end{aligned}
 \end{align}
 ```
-Here, $\zeta \in \mathbb{R}^m$ represents the slack variables, which quantify the prediction error, and $R(w,b)$ denotes the regularization term for the parameters $w$ and $b$. 
+Here, $\zeta \in \mathbb{R}^m$ represents the slack variables, which quantify the prediction error, and $R(w,w_0)$ denotes the regularization term for the parameters $w$ and $w_0$. 
 
 Choosing the norm-2 regularization, i.e. $R(w,w_0) = \lambda \|w\|_2, \lambda > 0$, yields the [robust version of SVM](https://www.jmlr.org/papers/v10/xu09b.html) that can be reformulated as a second-order cone programming, where we introduce $\alpha$ as an upper bound for $\|w\|_2$ that can be set as a second-order cone constraint $\|w\|_2 \le \alpha$: 
 
