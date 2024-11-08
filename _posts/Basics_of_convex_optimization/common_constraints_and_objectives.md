@@ -50,7 +50,7 @@ where $X$ is a convex subset.
 
 ***Unified views of convex sets and objectives***
 
-The convexity of constraints and functions can be unified by the use of epigraph, i.e. $f(x) \le t, \ t \in \mathbb{R}$. Then the set $\{(t,x) \in \mathbb{R} \times X | f(x) \le t\}$ is a convex set for variable $(t,x)$.
+The convexity of constraints and functions can be unified by the use of epigraph, i.e. $f(x) \le t, \ t \in \mathbb{R}$. Then the set $\left\{(t,x) \in \mathbb{R} \times X | f(x) \le t \right\}$ is a convex set for variable $(t,x)$.
 
 Convex optimization
 ------
@@ -161,7 +161,7 @@ Here I will show how to model a second-order cone optimization via [JuMP](https:
  for a standard binary classification task, the resulting classifier is defined as: 
  ```math
  \begin{align}
- h_{w, b}(x)=\operatorname{sgn}(\langle w, x\rangle+b),
+ h_{w, b}(x)=\text{sgn}(\langle w, x\rangle+b),
  \end{align}
  ```
  where the parameters $w, b$ are the solution of the following convex optimization problem:
