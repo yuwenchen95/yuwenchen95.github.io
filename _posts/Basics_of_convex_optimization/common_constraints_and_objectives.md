@@ -50,7 +50,15 @@ where $X$ is a convex subset.
 
 ***Unified views of convex sets and objectives***
 
-The convexity of constraints and functions can be unified by the use of epigraph, i.e. $f(x) \le t, \ t \in \mathbb{R}$. Then the set $\left\{(t,x) \in \mathbb{R} \times X | f(x) \le t \right\}$ is a convex set for variable $(t,x)$.
+The convexity of constraints and functions can be unified by the use of epigraph, i.e. $f(x) \le t, \ t \in \mathbb{R}$. Then the set 
+```math
+\begin{align}
+\begin{aligned}
+\left\{(t,x) \in \mathbb{R} \times X | f(x) \le t \right\}
+\end{aligned} 
+\end{align}
+``` 
+is a convex set for variable $(t,x)$.
 
 Convex optimization
 ------
