@@ -17,13 +17,13 @@ Standard optimization formulation
 ------
 An optimization can be formulated as:
 ```math
-\begin{align*}
+\begin{align}
 \begin{aligned}
 \text{min} \quad & f(x)\\[2ex]
 \text{subject to} \quad & h(x) = 0, \\[1ex]
         & g(x) \le 0, 
 \end{aligned}
-\end{align*}
+\end{align}
 ```
 with decision variables $x \in \mathbb{R}^n$, $h(x) \in \mathbb{R}^{p}$, $g(x) \in \mathbb{R}^{m}$.
 
@@ -31,36 +31,20 @@ Convexity: set $\textit{or}$ objective?
 ------
 The convexity has been defined for both constraints and objectives. For a constraint $\mathcal{S}$ that is convex, it satisfies:
 ```math
-<<<<<<< HEAD
-\begin{align*}
-\begin{aligned}
-\forall x, y \in \mathcal{S} \Rightarrow ax+(1-a)y \in \mathcal{S}, \ \forall a \in [0,1].
-\end{aligned}
-\end{align*}
-=======
 \begin{align}
 \begin{aligned}
 \forall x, y \in \mathcal{S} \Rightarrow ax+(1-a)y \in \mathcal{S}, \ \forall a \in [0,1].
 \end{aligned}
 \end{align}
->>>>>>> e09461bd2171f514b57373c9019685a8d19685c1
 ```
 
 For a function $f(x): X \rightarrow \mathbb{{R}}$ that is convex, it satisfies:
 ```math
-<<<<<<< HEAD
-\begin{align*}
-\begin{aligned}
-\forall x_1, x_2 \in X, f(ax_1 + (1-a)x_2) \le af(x_1) + (1-a)f(x_2), \ \forall a \in [0,1],
-\end{aligned}
-\end{align*}
-=======
 \begin{align}
 \begin{aligned}
 \forall x_1, x_2 \in X, f(ax_1 + (1-a)x_2) \le af(x_1) + (1-a)f(x_2), \ \forall a \in [0,1],
 \end{aligned}
 \end{align}
->>>>>>> e09461bd2171f514b57373c9019685a8d19685c1
 ```
 where $X$ is a convex subset. 
 
@@ -72,13 +56,13 @@ Convex optimization
 ------
 When funtion $f(x), g(x)$ are convex and $h(x)$ is a linear map (the only choice makes $h(x)=0$ convex), then the problem (1) becomes a convex optimization problem, i.e. 
 ```math
-\begin{align*}
+\begin{align}
 \begin{aligned}
 \text{min} \quad & f(x)\\[2ex]
  \text{subject to} \quad & A x = b, \\[1ex]
         & g(x) \le 0, 
 \end{aligned}   \qquad \qquad (1)
-\end{align*}
+\end{align}
 ```
 where $A \in \mathbb{R}^{p \times n}$.
 
@@ -99,13 +83,13 @@ The problem above yields the same optimal solution as problem (2), but now we ca
 
 The conic problem is of the following formulation:
 ```math
-\begin{align*}
+\begin{align}
 \begin{aligned}
 \text{min} \quad & c^\top x\\[2ex]
  \text{subject to} \quad & A x = b, \\[1ex]
         & x \in \mathcal{K}.
 \end{aligned}
-\end{align*}
+\end{align}
 ```
 There are many types of convex cones but almost all of them can be decomposed into the combination of following atomic cones:
 - **Zero cone:**  
@@ -132,26 +116,13 @@ There are also other solvers more classes of convex cones, e.g. [DDS](https://li
 
 Code examples
 ------
-<<<<<<< HEAD
 Here I will show how to model a second-order cone optimization via [JuMP](https://jump.dev/JuMP.jl/stable/), which is a domain-specific modeling language for mathematical optimization in Julia language. Suppose we want to build up the robust support vector machine (SVM) model in machine learning, where the training process is framed as solving a convex optimization problem. Given a set of training samples
  ```math
- \begin{align*}
+ \begin{align}
  \left\{x_i, y_i\right\}_{i=1}^m \subseteq \mathbb{R}^n \times\{-1,+1\},
- \end{align*}
+ \end{align}
  ``` 
  for a standard binary classification task, the resulting classifier is defined as: 
- ```math
- \begin{align*}
- h_{w, b}(x)=\operatorname{sgn}(\langle w, x\rangle+b),
- \end{align*}
- ```
- where the parameters $w, b$ are the solution of the following convex optimization problem:
-```math
-\begin{align*}
-=======
-Here I will show how to model a second-order cone optimization via [JuMP](https://jump.dev/JuMP.jl/stable/), which is a domain-specific modeling language for mathematical optimization in Julia language. Suppose we want to build up the robust support vector machine (SVM) model in machine learning
-
- Support Vector Machine (SVM) is a foundational machine learning model, where the training process is framed as solving a convex optimization problem. Given a set of training samples $\left\{x_i, y_i\right\}_{i=1}^m \subseteq \mathbb{R}^n \times\{-1,+1\}$ for a standard binary classification task, the resulting classifier is defined as: 
  ```math
  \begin{align}
  h_{w, b}(x)=\operatorname{sgn}(\langle w, x\rangle+b),
@@ -160,17 +131,12 @@ Here I will show how to model a second-order cone optimization via [JuMP](https:
  where the parameters $w, b$ are the solution of the following convex optimization problem:
 ```math
 \begin{align}
->>>>>>> e09461bd2171f514b57373c9019685a8d19685c1
 \begin{aligned}
 	\min_{w, w_0, t}: \quad& \frac{1}{m}\sum_{i=1}^m t_i + R(w, w_0) \\
 	\text{ s.t.} \quad& t_i \geq 1-y_i\left(\left\langle w, x_i\right\rangle+ w_0\right), \ \forall i = 1, \dots, m \\
 	\quad & t_i \geq 0.
 \end{aligned}
-<<<<<<< HEAD
-\end{align*}
-=======
 \end{align}
->>>>>>> e09461bd2171f514b57373c9019685a8d19685c1
 ```
 Here, $\zeta \in \mathbb{R}^m$ represents the slack variables, which quantify the prediction error, and $R(w,b)$ denotes the regularization term for the parameters $w$ and $b$. 
 
