@@ -93,22 +93,58 @@ The conic problem is of the following formulation:
 ```
 There are many types of convex cones but almost all of them can be decomposed into the combination of following atomic cones:
 - **Zero cone:**  
-  $\{0\}^n := \left\{ x \in \mathbb{R}^n \ \middle| \ x_i = 0, \forall i = 1, \ldots, n \right\}$.
+```math
+\begin{align}
+\begin{aligned}
+\{0\}^n := \left\{ x \in \mathbb{R}^n \ \middle| \ x_i = 0, \forall i = 1, \ldots, n \right\}.
+\end{aligned}
+\end{align}
+```
 
 - **Nonnegative cone:**  
-  $\mathbb{R}_{+}^n := \left\{ x \in \mathbb{R}^n \ \middle| \ x_i \geq 0, \forall i = 1, \ldots, n \right\}$.
+```math
+\begin{align}
+\begin{aligned}
+\mathbb{R}_{+}^n := \left\{ x \in \mathbb{R}^n \ \middle| \ x_i \geq 0, \forall i = 1, \ldots, n \right\}.
+  \end{aligned}
+\end{align}
+```
 
 - **Second-order cone:**  
-  $\mathcal{K}_{\mathrm{soc}}^n := \left\{ (t, x) \ \middle| \ x \in \mathbb{R}^{n-1}, t \in \mathbb{R}_{+}, \|x\|_2 \leq t \right\}$.
+```math
+\begin{align}
+\begin{aligned}
+\mathcal{K}_{\mathrm{soc}}^n := \left\{ (t, x) \ \middle| \ x \in \mathbb{R}^{n-1}, t \in \mathbb{R}_{+}, \|x\|_2 \leq t \right\}.
+\end{aligned}
+\end{align}
+```
 
 - **Positive semidefinite cone:**  
-  $\mathbb{S}_{+}^n := \left\{ X \in \mathbb{S}^n \ \middle| \ v^{\top} X v \geq 0 \quad \forall v \in \mathbb{R}^n \right\}$.
+```math
+\begin{align}
+\begin{aligned}
+\mathbb{S}_{+}^n := \left\{ X \in \mathbb{S}^n \ \middle| \ v^{\top} X v \geq 0 \quad \forall v \in \mathbb{R}^n \right\}.
+\end{aligned}
+\end{align}
+```
 
 - **Exponential cone:**  
-  $\mathcal{K}_{\exp} := \left\{ (x, y, z) \ \middle| \ y > 0, y \exp \left( \frac{x}{y} \right) \leq z \right\} \cup \left\{ (x, 0, z) \mid x \leq 0, z \geq 0 \right\}$.
+```math
+\begin{align}
+\begin{aligned}
+\mathcal{K}_{\exp} := \left\{ (x, y, z) \ \middle| \ y > 0, y \exp \left( \frac{x}{y} \right) \leq z \right\} \cup \left\{ (x, 0, z) \mid x \leq 0, z \geq 0 \right\}.
+\end{aligned}
+\end{align}
+```
 
 - **Power cone:**  
-  \(\mathcal{K}_{\text{pow},\alpha} = \left\{ (x, y, z) \ \middle| \ x^\alpha y^{1-\alpha} \geq |z|, x \geq 0, y \geq 0, \alpha \in (0,1) \right\}\).
+```math
+\begin{align}
+\begin{aligned}
+\mathcal{K}_{\text{pow},\alpha} = \left\{ (x, y, z) \ \middle| \ x^\alpha y^{1-\alpha} \geq |z|, x \geq 0, y \geq 0, \alpha \in (0,1) \right\}.
+\end{aligned}
+\end{align}
+```
 
 These are basic cones that are supported by conic solvers, e.g. [Mosek](https://www.mosek.com/) and [Clarabel](https://clarabel.org/stable/). (Note that the zero cone and the nonnegative cone correspond to linear equality and inequality constraints respectively.)
 
