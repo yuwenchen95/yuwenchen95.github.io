@@ -24,7 +24,7 @@ Blogs
 
 - Basics of convex optimization
   1. [What is convex optimization？common constraints and objectives](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Basics_of_convex_optimization/common_constraints_and_objectives.md).
-  2. DCP
+  2. [Disciplined Convex Programming](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Basics_of_convex_optimization/disciplined_convex_programming.md)
    
 - 凸优化算法
   1. 零阶算法
