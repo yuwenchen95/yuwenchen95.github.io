@@ -91,4 +91,4 @@ s.t. & \quad Ax=b, \\
 ```
 DCP is not able to verify that a general product $a*b$ is convex, even if $a$ and $b$ are convex terms. 
 
-However, we can verify the entropy function $-x \log(x)$ is a concave function for $x > 0$. By adding the new concave expression $-x \log(x)$ to the atom library, the DCP rules can verify the problem above is convex. In summary, adding more (nonlinear) atoms into the atom library makes the DCP modelling more powerful. 
+However, we know the entropy function $-x \log(x)$ is a concave function for $x > 0$. By adding the new concave expression $-x \log(x)$ to the atom library, the DCP rules can verify the problem above is convex. In summary, adding more (nonlinear) atoms into the atom library makes the DCP modelling more powerful. 
