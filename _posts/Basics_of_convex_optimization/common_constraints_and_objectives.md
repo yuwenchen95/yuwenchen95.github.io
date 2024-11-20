@@ -62,7 +62,7 @@ is a convex set for variable $(t,x)$.
 
 Convex optimization
 ------
-When funtion $f(x), g(x)$ are convex and $h(x)$ is a linear map (the only choice makes $h(x)=0$ convex), then the problem (1) becomes a convex optimization problem, i.e. 
+When funtion $f(x), g(x)$ are convex and $h(x)$ is a linear map (the only choice makes $h(x)=0$ convex), then the problem (1) is a convex optimization problem, i.e. 
 ```math
 \begin{align}
 \begin{aligned}

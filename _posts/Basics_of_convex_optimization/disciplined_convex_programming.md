@@ -58,9 +58,7 @@ An atomic function can be the composition of a class of atomic functions. For ex
 \end{aligned}
 \end{align}
 ```
-as an atomic function. In the end, all atomic functions can be tracked down to be the cones I have shown in the previous [post](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Basics_of_convex_optimization/common_constraints_and_objectives.md).
-
-If we are going to use the $L_1$-norm for regulariation in an optimization problem, we don't need to reformulate the $L_1$-norm as
+as an atomic function. If we are going to use the $L_1$-norm for regulariation in an optimization problem, we don't need to reformulate the $L_1$-norm as
 ```math
 \begin{align}
 \begin{aligned}
@@ -69,15 +67,21 @@ s.t. & -t_i \le x_i \le t_i, i = \{1, \dots, n\}
 \end{aligned}
 \end{align}
 ```
-explicitly but can input $\| \mathbf{x} \|_1$ directly in cvxpy. 
+explicitly but can input $|| \mathbf{x} ||_1$ directly in cvxpy. 
 
-Modellers can now input a complex constraint insdead of building it from basic cones. You can find the current list of atom functions you can use in the [link](https://www.cvxpy.org/tutorial/functions/index.html#scalar-functions). The DCP makes modelling a convex optimization problem very convenient to users who want to do a quick test for their models without transforming the model into the standard formulation of the solver they want to use. Moreover, people can test performance of different solvers on their models by simply setting the *solver* in function *solve()*, e.g.
+The DCP makes modelling a convex optimization problem very convenient to users who want to do a quick test for their models without transforming the model into the standard formulation of the solver they want to use. Modellers can now input a complex constraint via atomic functions insdead of building it from basic cones. In the end, all atomic functions will be automatically decomposed to basic cones that I have shown in the previous [post](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Basics_of_convex_optimization/common_constraints_and_objectives.md). You can find the current list of atom functions you can use in the [link](https://www.cvxpy.org/tutorial/functions/index.html#scalar-functions). Moreover, people can test performance of different solvers on their models by simply setting the *solver* in function *solve()*, e.g.
 ```
 problem.solve(solver=<solver_name>, **kwargs)
 ```
 
+#### From basic cones to atomic functions (To developer)
+For modellers, we have shown that DCP is a user-friendly and effective tool for modelling a complex convex problem if sufficient atomic expressions are given. The last issue is how can we support those atoms by basic cones such as linear cones, second-order cones, exponential cones, power cones and positive semidefinite cones. This is the main work done by developers of a DCP platform, like cvxpy and Convex.jl. Information for atoms with the corresponding basic cones can be found on [this page](https://jump.dev/Convex.jl/stable/manual/operations/) provided by Convex.jl.
+
+Thanks to the development of DCP platforms, the solver developers can focus on maintaining the support of several basic cones. When a new convex term becomes popular in an industry and needs to be frequently used, we only need to provide the corresponding atomic function on the DCP platform along with a paradigm that can automatically transform it into basic cones, without modifying the underlying code of the solver.
 
 #### Limitation of DCP: 
+
+###### DCP can't identify all convex problems
 Following DCP rules, you can know check whether your function is convex or not using the [analyzer](https://dcp.stanford.edu/analyzer) from the DCP website. However, DCP will not be able to check the convexity of a problem, even it is a well-known convex problem, e.g. the entropy maximization problem:
 ```math
 \begin{align}
@@ -92,3 +96,9 @@ s.t. & \quad Ax=b, \\
 DCP is not able to verify that a general product $a*b$ is convex, even if $a$ and $b$ are convex terms. 
 
 However, we know the entropy function $-x \log(x)$ is a concave function for $x > 0$. By adding the new concave expression $-x \log(x)$ to the atom library, the DCP rules can verify the problem above is convex. In summary, adding more (nonlinear) atoms into the atom library makes the DCP modelling more powerful. 
+
+<!-- ###### DCP can not achieve the best performance -->
+
+
+#### Example
+We will show how to use 
