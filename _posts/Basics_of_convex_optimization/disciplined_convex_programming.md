@@ -100,5 +100,54 @@ However, we know the entropy function $-x \log(x)$ is a concave function for $x 
 <!-- ###### DCP can not achieve the best performance -->
 
 
-#### Example
-We will show how to use 
+#### Code example
+Here is the code of entropy maximization from the cvxpy website:
+```
+import cvxpy as cp
+import numpy as np
+
+# Make random input repeatable.
+np.random.seed(0)
+
+# Matrix size parameters.
+n = 20
+m = 10
+p = 5
+
+# Generate random problem data.
+tmp = np.random.rand(n)
+# Compute the Euclidean norm (L2 norm)
+norm = np.sum(tmp)
+# Normalize it such that cp.sum(x) == 1
+tmp /= norm
+
+A = np.random.randn(m, n)
+b = A.dot(tmp)
+F = np.random.randn(p, n)
+g = F.dot(tmp) + np.random.rand(p)
+
+# Entropy maximization.
+x = cp.Variable(shape=n)
+# Set the objective function
+obj = cp.Maximize(cp.sum(cp.entr(x)))
+constraints = [A*x == b,
+               cp.sum(x) == 1,
+               F*x <= g ]
+prob = cp.Problem(obj, constraints)
+prob.solve(solver=cp.CLARABEL, verbose=True)
+
+# Print result.
+print("\nThe optimal value is:", prob.value)
+print('\nThe optimal solution is:')
+print(x.value)
+```
+If we replace the objective function by setting
+```
+obj = cp.Maximize(cp.sum(-x * cp.log(x)))
+```
+The cvxpy will return the error that DCP rule is not satisfied:
+```
+cvxpy.error.DCPError: Problem does not follow DCP rules. Specifically:
+The objective is not DCP. Its following subexpressions are not:
+-var1 @ log(var1)
+```
