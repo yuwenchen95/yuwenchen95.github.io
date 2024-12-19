@@ -23,24 +23,27 @@ Blogs
 ------
 
 - Basics of convex optimization
-  1. [What is convex optimization？common constraints and objectives](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Basics_of_convex_optimization/common_constraints_and_objectives.md).
-  2. [Disciplined Convex Programming](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Basics_of_convex_optimization/disciplined_convex_programming.md)
-   
+   1. [What is convex optimization？common constraints and objectives](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Basics_of_convex_optimization/common_constraints_and_objectives.md).
+   2. [Disciplined Convex Programming](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Basics_of_convex_optimization/disciplined_convex_programming.md)
+
+- Some notes
+   1. [Which problems a solver can not solve?](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Some_notes/failed_problem.md).
+
 - 凸优化算法
-  1. 零阶算法
-  2. 一阶算法
-     1. Feasible methods
+   1. 零阶算法
+   2. 一阶算法
+      1. Feasible methods
         - 梯度下降
         - 投影梯度下降
         - proximal algorithm
         - simplex (active-set) method
-     2. Infeasible method
+      2. Infeasible method
         - 增广拉格朗日法
         - ADMM
         - 算子分裂法
-  3. 二阶算法
-     1. 内点法
-     2. 拟牛顿法
+   3. 二阶算法
+      1. 内点法
+      2. 拟牛顿法
 
 - 凸优化案例
   - 模块预测控制 (MPC)
