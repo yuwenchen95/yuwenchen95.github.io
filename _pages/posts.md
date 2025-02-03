@@ -27,7 +27,7 @@ Blogs
    2. [Disciplined Convex Programming](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Basics_of_convex_optimization/disciplined_convex_programming.md)
 
 - Some notes
-   1. [Which problems a solver can not solve?](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Some_notes/failed_problem.md).
+   1. [Which problems a conic solver can not solve?](https://github.com/yuwenchen95/yuwenchen95.github.io/blob/master/_posts/Some_notes/failed_problem.md).
 
 - 凸优化算法
    1. 零阶算法

@@ -83,11 +83,11 @@ author:
   name             : "Yuwen Chen"
   avatar           : "my_photo.jpg"
   bio              : # "Your biography for the left-hand sidebar"
-  location         : "Oxford, UK"
-  employer         : "University of Oxford"
+  location         : "Lausanne, Switzerland"
+  employer         : "EPFL"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=B7zXVkIAAAAJ"
-  email            : "yuwen.chen@eng.ox.ac.uk"
+  email            : "yuwen.chen@epfl.ch"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

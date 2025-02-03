@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I received my PhD under the supervision of [Prof. Paul Goulart](https://users.ox.ac.uk/~engs1373/) in the control group of Department of Engineering Science, University of Oxford. My current research is on numerical algorithms for convex conic optimization, from the design of efficient first-order methods and interior point methods and their implementation on GPU. Before joining University of Oxford, I obtained my bachelor degree from the Department of Electrical Engineering of Shanghai Jiao Tong University (2017) and master degree from the Department of Information Technology and Electrical Engineering of ETH Zurich (2020).
+I'm a postdoc working with Prof. Colin Jones at EPFL. My current research focuses on numerical algorithms for convex conic optimization, from the design of efficient first-order methods and interior point methods and their implementation on GPU. Before joining EPFL, I obtained my bachelor degree from the Department of Electrical Engineering of Shanghai Jiao Tong University (2017), master degree from the Department of Information Technology and Electrical Engineering of ETH Zurich (2020) and PhD from the Department of Engineering Science, University of Oxford (2024).
 
 <!-- News
 ------
@@ -19,6 +19,7 @@ I received my PhD under the supervision of [Prof. Paul Goulart](https://users.ox
 
 Publications
 ------
+- *CuClarabel: GPU Acceleration for A Conic Optimization Solver*, **Yuwen Chen**, Danny Tse, Parth Nobel, Paul Goulart and Stephen Boyd, *arXiv*
 - *Clarabel: An interior-point solver for conic programs with quadratic objectives*, Paul Goulart and **Yuwen Chen**, *arXiv*
 - *An Efficient IPM Implementation for A Class of Nonsymmetric Cones*, **Yuwen Chen** and Paul Goulart, *arXiv*
 - *A Unified Early Termination Technique for Primal-dual Algorithms in Mixed Integer Conic Programming*, **Yuwen Chen** and Paul Goulart, Control Systems Letters (L-CSS)
@@ -38,6 +39,7 @@ Teachings
 Software
 ------
 - [Clarabel.jl](https://oxfordcontrol.github.io/ClarabelDocs/stable/)
+- [CuClarabel](https://github.com/cvxgrp/CuClarabel)
 
 Award
 ------
